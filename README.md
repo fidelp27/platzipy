@@ -22,3 +22,12 @@ source enviroment/bin/active
 pip3 install -r requirements.txt
 python3 main.py
 ```
+
+#Peticiones
+```
+cd peticiones
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+python3 main.py
+```
