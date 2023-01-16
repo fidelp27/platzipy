@@ -13,3 +13,12 @@ Para descargar la imagen del gráfico generado
 cd graphics
 python3 main.py
 ```
+
+#Contributions
+```
+git clone
+cd graphics2
+source enviroment/bin/active
+pip3 install -r requirements.txt
+python3 main.py
+```
