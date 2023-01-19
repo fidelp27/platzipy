@@ -10,9 +10,7 @@ def get_list():
 @app.get("/bienvenida", response_class =HTMLResponse)
 def get_letras():
     return '''
-    <h1>Hola mundo desde fastapi</h1> 
-'''
+            <h1>Hola mundo desde fastapi</h1> 
+           '''
 
     
-if __name__ == "__main__":
-    run()    

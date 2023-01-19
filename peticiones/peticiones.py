@@ -8,3 +8,4 @@ def get_categories():
     categories = r.json()
     for category in categories: 
         print(category['name'])
+        

@@ -1,0 +1,28 @@
+#Desde cuál versión parte docker
+FROM python:3.10
+
+#Nombre de la carpeta
+WORKDIR /app
+#Copiar el archivo de dependencias local/servidor
+COPY requirements.txt /app/requirements.txt
+
+#instala las dependencias
+#No aplique cache
+#Si hay alguna actualizacion del gestor de paquetes la haga 
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+
+#Se copian los archivos
+COPY . /app
+
+#Instrucciones para que se ejecute
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+
+# Comando:
+# 1) docker-compose build
+# 2) docker-compose ps
+# 3) docker-compose down
+# 4) docker-compose up -d
+# 5) docker-compose ps
+# 6) docker-compose exec app-csv bash
+
+
